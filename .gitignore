@@ -28,9 +28,6 @@ ENV/
 .streamlit/
 
 # Local data / Session state
-*.json
-!data.json
-!equipe.json
 
 # IDEs
 .vscode/

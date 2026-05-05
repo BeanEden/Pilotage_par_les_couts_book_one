@@ -1,0 +1,601 @@
+{
+  "taches": [
+    {
+      "id": 1,
+      "cat": "Cadrage",
+      "nom": "Cadrage projet & Specs MVP",
+      "res": "PM",
+      "semaine": 1,
+      "duree": 0.6,
+      "critique": true,
+      "deps": [],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 2,
+      "cat": "UX/UI",
+      "nom": "Benchmark & Maquettage Figma",
+      "res": "ALT",
+      "semaine": 2,
+      "duree": 0.8,
+      "critique": false,
+      "deps": [
+        1
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 3,
+      "cat": "Architecture",
+      "nom": "Architecture technique & BDD",
+      "res": "FRL",
+      "semaine": 2,
+      "duree": 0.4,
+      "critique": true,
+      "deps": [
+        1
+      ],
+      "complexite": "Haute",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 4,
+      "cat": "DevOps",
+      "nom": "Setup Cloud & CI/CD",
+      "res": "FRL",
+      "semaine": 2,
+      "duree": 0.4,
+      "critique": true,
+      "deps": [
+        3
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 5,
+      "cat": "Développement MVP",
+      "nom": "API Auth & Profils",
+      "res": "BE",
+      "semaine": 3,
+      "duree": 0.6,
+      "critique": true,
+      "deps": [
+        3
+      ],
+      "complexite": "Haute",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 6,
+      "cat": "Développement MVP",
+      "nom": "Catalogue livres & BDD",
+      "res": "BE",
+      "semaine": 4,
+      "duree": 0.8,
+      "critique": true,
+      "deps": [
+        5
+      ],
+      "complexite": "Haute",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 7,
+      "cat": "Développement MVP",
+      "nom": "Dépôt & Scan ISBN (MVP)",
+      "res": "MOB",
+      "semaine": 4,
+      "duree": 0.6,
+      "critique": true,
+      "deps": [
+        6
+      ],
+      "complexite": "Haute",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 8,
+      "cat": "Développement MVP",
+      "nom": "Achat 1 € (Logic)",
+      "res": "BE",
+      "semaine": 5,
+      "duree": 0.8,
+      "critique": true,
+      "deps": [
+        7
+      ],
+      "complexite": "Haute",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 9,
+      "cat": "Développement MVP",
+      "nom": "Favoris & Souhaits",
+      "res": "MOB",
+      "semaine": 4,
+      "duree": 0.4,
+      "critique": false,
+      "deps": [
+        6
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 10,
+      "cat": "Développement MVP",
+      "nom": "Notifications Vente & Souhait",
+      "res": "BE",
+      "semaine": 5,
+      "duree": 0.6,
+      "critique": false,
+      "deps": [
+        8
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 11,
+      "cat": "Développement MVP",
+      "nom": "Messagerie RDV",
+      "res": "BE",
+      "semaine": 6,
+      "duree": 0.8,
+      "critique": true,
+      "deps": [
+        8
+      ],
+      "complexite": "Haute",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 12,
+      "cat": "Bonus",
+      "nom": "Mode invité",
+      "res": "MOB",
+      "semaine": 4,
+      "duree": 0.4,
+      "critique": false,
+      "deps": [
+        5
+      ],
+      "complexite": "Faible",
+      "perimetre": "Bonus"
+    },
+    {
+      "id": 13,
+      "cat": "Bonus",
+      "nom": "Géolocalisation avancée",
+      "res": "MOB",
+      "semaine": 5,
+      "duree": 0.8,
+      "critique": false,
+      "deps": [
+        6
+      ],
+      "complexite": "Haute",
+      "perimetre": "Bonus"
+    },
+    {
+      "id": 14,
+      "cat": "Bonus",
+      "nom": "Paiement intégré Stripe",
+      "res": "FRL",
+      "semaine": 6,
+      "duree": 0.6,
+      "critique": false,
+      "deps": [
+        8
+      ],
+      "complexite": "Haute",
+      "perimetre": "Bonus"
+    },
+    {
+      "id": 15,
+      "cat": "Bonus",
+      "nom": "Confirmation remise main propre",
+      "res": "MOB",
+      "semaine": 6,
+      "duree": 0.4,
+      "critique": false,
+      "deps": [
+        11
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "Bonus"
+    },
+    {
+      "id": 16,
+      "cat": "Tests/Recette",
+      "nom": "Tests unitaires & Intégration",
+      "res": "QA",
+      "semaine": 6,
+      "duree": 0.6,
+      "critique": false,
+      "deps": [
+        11
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 17,
+      "cat": "Tests/Recette",
+      "nom": "Tests fonctionnels & Paiement",
+      "res": "QA",
+      "semaine": 7,
+      "duree": 0.6,
+      "critique": true,
+      "deps": [
+        16,
+        14
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 18,
+      "cat": "Tests/Recette",
+      "nom": "Recette MOA (CEO)",
+      "res": "PM",
+      "semaine": 7,
+      "duree": 0.4,
+      "critique": true,
+      "deps": [
+        17
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 19,
+      "cat": "Mise en production",
+      "nom": "Correction anomalies final",
+      "res": "MOB",
+      "semaine": 8,
+      "duree": 0.4,
+      "critique": true,
+      "deps": [
+        18
+      ],
+      "complexite": "Haute",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 20,
+      "cat": "Mise en production",
+      "nom": "Publication Stores (Apple/Play)",
+      "res": "PM",
+      "semaine": 8,
+      "duree": 0.2,
+      "critique": true,
+      "deps": [
+        19
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 21,
+      "cat": "Mise en production",
+      "nom": "Mise en production Cloud",
+      "res": "FRL",
+      "semaine": 8,
+      "duree": 0.2,
+      "critique": true,
+      "deps": [
+        19
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 22,
+      "cat": "Clôture",
+      "nom": "Analyse écarts & Reporting",
+      "res": "PM",
+      "semaine": 8,
+      "duree": 0.2,
+      "critique": false,
+      "deps": [
+        21
+      ],
+      "complexite": "Faible",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 23,
+      "cat": "Clôture",
+      "nom": "Documentation finale",
+      "res": "STG",
+      "semaine": 8,
+      "duree": 0.4,
+      "critique": false,
+      "deps": [
+        22
+      ],
+      "complexite": "Faible",
+      "perimetre": "MVP"
+    },
+    {
+      "id": 24,
+      "cat": "Clôture",
+      "nom": "Support post-lancement (S1)",
+      "res": "BE",
+      "semaine": 8,
+      "duree": 0.2,
+      "critique": false,
+      "deps": [
+        21
+      ],
+      "complexite": "Moyenne",
+      "perimetre": "MVP"
+    }
+  ],
+  "equipe": [
+    {
+      "id": "PM",
+      "label": "Chef projet / PO",
+      "nom": "Dupont",
+      "prenom": "Jean",
+      "seniorite": "Senior",
+      "type": "CDI",
+      "statut": "Cadre",
+      "salaire_brut_annuel": 70000,
+      "couleur": "7F77DD"
+    },
+    {
+      "id": "BE",
+      "label": "Dev Backend",
+      "nom": "Martin",
+      "prenom": "Alice",
+      "seniorite": "Expert",
+      "type": "CDI",
+      "statut": "ETAM",
+      "salaire_brut_annuel": 55000,
+      "couleur": "1D9E75"
+    },
+    {
+      "id": "MOB",
+      "label": "Dev Mobile",
+      "nom": "Lefebvre",
+      "prenom": "Thomas",
+      "seniorite": "Intermédiaire",
+      "type": "CDI",
+      "statut": "ETAM",
+      "salaire_brut_annuel": 58000,
+      "couleur": "378ADD"
+    },
+    {
+      "id": "QA",
+      "label": "QA Engineer",
+      "nom": "Moreau",
+      "prenom": "Julie",
+      "seniorite": "Senior",
+      "type": "CDI",
+      "statut": "ETAM",
+      "salaire_brut_annuel": 48000,
+      "couleur": "D4537E"
+    },
+    {
+      "id": "STG",
+      "label": "Stagiaire Recette/Doc",
+      "nom": "Petit",
+      "prenom": "Léo",
+      "seniorite": "Junior",
+      "type": "STAGIAIRE",
+      "statut": "Stagiaire",
+      "salaire_brut_annuel": 7800,
+      "couleur": "888780"
+    },
+    {
+      "id": "ALT",
+      "label": "Alternant UX/UI/Dev",
+      "nom": "Roux",
+      "prenom": "Emma",
+      "seniorite": "Junior",
+      "type": "ALTERNANT",
+      "statut": "Alternant",
+      "salaire_brut_annuel": 18000,
+      "couleur": "B4B2A9"
+    },
+    {
+      "id": "FRL",
+      "label": "Freelance Paiement/Sécu",
+      "nom": "Bernard",
+      "prenom": "Marc",
+      "seniorite": "Expert",
+      "type": "FREELANCE",
+      "statut": "Freelance",
+      "salaire_brut_annuel": 80000,
+      "couleur": "E24B4A"
+    }
+  ],
+  "config": {
+    "nom": "Book One — MVP Mobile",
+    "date_debut": "2025-01-06",
+    "jours_par_semaine": 5,
+    "description": "MVP de l'application mobile Book One : scan de 3 livres à déposer, catalogue géolocalisé, achat à 1 €, messagerie RDV, notifications."
+  },
+  "postes_couts": [
+    {
+      "categorie": "Infrastructure & Cloud",
+      "sous_cat": "Hébergement (Dev/Test/Prod)",
+      "description": "VM, Cloud Run, containers (14 semaines)",
+      "retenu": 1200,
+      "justification": "Environnements GCP staging + prod"
+    },
+    {
+      "categorie": "Infrastructure & Cloud",
+      "sous_cat": "Base de données",
+      "description": "PostgreSQL managé (users, livres, favoris, transactions)",
+      "retenu": 500,
+      "justification": "DB Cloud SQL managée"
+    },
+    {
+      "categorie": "Infrastructure & Cloud",
+      "sous_cat": "Stockage Cloud",
+      "description": "Bucket S3/GCS pour images couvertures",
+      "retenu": 200,
+      "justification": "Assets images livres"
+    },
+    {
+      "categorie": "Données & APIs",
+      "sous_cat": "API ISBN / Scan",
+      "description": "Accès API Open Library / Scan ISBN",
+      "retenu": 0,
+      "justification": "Accès gratuit Open Library"
+    },
+    {
+      "categorie": "Données & APIs",
+      "sous_cat": "API Géolocalisation",
+      "description": "Google Maps API / Mapbox",
+      "retenu": 300,
+      "justification": "Frais API usage beta"
+    },
+    {
+      "categorie": "Données & APIs",
+      "sous_cat": "Paiement Stripe",
+      "description": "Intégration + Frais transaction + Commission",
+      "retenu": 1500,
+      "justification": "Frais Stripe sur volume transactions beta"
+    },
+    {
+      "categorie": "Données & APIs",
+      "sous_cat": "Notifications FCM",
+      "description": "Firebase Cloud Messaging",
+      "retenu": 0,
+      "justification": "Gratuit (Firebase)"
+    },
+    {
+      "categorie": "Qualité & Tests",
+      "sous_cat": "Monitoring / Logs",
+      "description": "Datadog / Sentry (backend + mobile)",
+      "retenu": 400,
+      "justification": "Abonnement Sentry Team"
+    },
+    {
+      "categorie": "Légal & Conformité",
+      "sous_cat": "Sécurité / RGPD",
+      "description": "Auth, chiffrement, protection API, DPO",
+      "retenu": 1000,
+      "justification": "Conseil DPO externe 2j"
+    },
+    {
+      "categorie": "Coûts cachés",
+      "sous_cat": "Réunions & Coordination",
+      "description": "Points CEO, arbitrages, réunions d'équipe",
+      "retenu": 800,
+      "justification": "Estimation temps de coordination ~5%"
+    },
+    {
+      "categorie": "Coûts cachés",
+      "sous_cat": "Dette technique & Corrections",
+      "description": "Corrections post-audit, refactoring",
+      "retenu": 1200,
+      "justification": "Provision pour correction dettes S7-S8"
+    },
+    {
+      "categorie": "Licences & Logiciels",
+      "sous_cat": "Gestion projet (Jira/Notion)",
+      "description": "Jira Standard 9 users",
+      "retenu": 200,
+      "justification": "8 EUR/user/mois x 9 x 3 mois"
+    },
+    {
+      "categorie": "Licences & Logiciels",
+      "sous_cat": "Design (Figma)",
+      "description": "Figma Professional",
+      "retenu": 120,
+      "justification": "15 EUR/user/mois x 2 x 4 mois"
+    },
+    {
+      "categorie": "Licences & Logiciels",
+      "sous_cat": "Dev (GitHub/CI/CD)",
+      "description": "GitHub Team + GitHub Actions",
+      "retenu": 150,
+      "justification": "GitHub Team + forfait actions"
+    },
+    {
+      "categorie": "Licences & Logiciels",
+      "sous_cat": "Présentation (Gamma/Canva)",
+      "description": "Gamma Pro / Canva",
+      "retenu": 50,
+      "justification": "Abonnement premium 1 mois"
+    }
+  ],
+  "risques": [
+    {
+      "id": "R1",
+      "titre": "Complexité Paiement / Géo",
+      "description": "Intégration Stripe ou Mapbox plus complexe que prévue.",
+      "probabilite": "Moyenne",
+      "impact": "Moyen",
+      "provision": 5000,
+      "couleur": "#BA7517",
+      "strategies": [
+        {
+          "titre": "Focus anticipé S3",
+          "type": "Prévention",
+          "budget": 0,
+          "description": "Débuter les spikes techniques géo dès la S3."
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "titre": "Retards CEO (MOA)",
+      "description": "Lenteur dans les validations ou changements de périmètre.",
+      "probabilite": "Haute",
+      "impact": "Moyen",
+      "provision": 3000,
+      "couleur": "#7F77DD",
+      "strategies": [
+        {
+          "titre": "Points hebdomadaires fixes",
+          "type": "Prévention",
+          "budget": 0,
+          "description": "Rituel de validation chaque vendredi."
+        }
+      ]
+    },
+    {
+      "id": "R3",
+      "titre": "Tests plus longs / Bugs critiques",
+      "description": "Phase de recette S6-S7 révèle trop d'anomalies bloquantes.",
+      "probabilite": "Moyenne",
+      "impact": "Élevé",
+      "provision": 8000,
+      "couleur": "#E24B4A",
+      "strategies": [
+        {
+          "titre": "QA embarqué dès S4",
+          "type": "Prévention",
+          "budget": 0,
+          "description": "Tests continus dès les premières APIs."
+        }
+      ]
+    },
+    {
+      "id": "R4",
+      "titre": "Freelance plus cher/indisponible",
+      "description": "Besoin de jours supplémentaires en urgence (800€/j).",
+      "probabilite": "Faible",
+      "impact": "Élevé",
+      "provision": 6000,
+      "couleur": "#1D9E75",
+      "strategies": [
+        {
+          "titre": "Option de réserve S5",
+          "type": "Prévention",
+          "budget": 0,
+          "description": "Bloquer les créneaux du freelance à l'avance."
+        }
+      ]
+    }
+  ]
+}
